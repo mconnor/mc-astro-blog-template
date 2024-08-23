@@ -5,10 +5,7 @@
     "outDir": "dist",
     "strictNullChecks": true
   },
-  "include": [
-    "src",
-    "*.config.*"
-  ],
+  "include": ["src", "*.config.*"],
   "exclude": [
     "node_modules",
     "dist",
