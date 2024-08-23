@@ -10,7 +10,7 @@ export default {
       },
     },
   ],
-  singleQuote: true,
+      singleQuote: true,
   trailingComma: 'all',
   tabWidth: 2,
 };

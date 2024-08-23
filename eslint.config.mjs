@@ -1,13 +1,16 @@
 // @ts-check
 
 import config from '@repo/eslint-config/astro';
-import prettierConfig from 'eslint-config-prettier';
+import regexConfig from '@repo/eslint-config/regex-config';
+// import prettierConfig from 'eslint-config-prettier';
 
 export default [
   ...config,
-  prettierConfig,
+  ...regexConfig,
+
+  // prettierConfig,
   {
-    ignores: ['.prettierrc.mjs','config-eslint/'],
+    ignores: ['.prettierrc.mjs','config-eslint/','packages/'],
   },
 ];
 

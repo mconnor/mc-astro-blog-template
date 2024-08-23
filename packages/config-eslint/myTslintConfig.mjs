@@ -15,9 +15,6 @@ const myTslintConfig = tseslint.config(
       parserOptions: {
         parserServices: true,
         tsconfigRootDir: import.meta.dirname,
-        // ecmaFeatures: {
-        //   jsx: true,
-        // },
       },
       globals: {
         ...globals.browser,
