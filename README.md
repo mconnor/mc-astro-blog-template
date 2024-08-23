@@ -1,4 +1,17 @@
-# Astro Starter Kit: Blog
+# Mike's Astro Starter Kit: Blog
+
+I've settled on some patterns that work for me for starting new astro apps.
+
+### The tooling
+
+- A flat eslint config.
+- Some tests
+- Webcomponents for CSS layout, one of wich made with the [Lit Framework][1].
+- [Open Props][2] - Supercharged CSS variables
+
+This app will be in my monorepo. The idea is to keep it clean and ready to rock with these enhancments.
+
+### Info from Astro
 
 ```sh
 npm create astro@latest -- --template blog
@@ -66,3 +79,16 @@ Check out [our documentation](https://docs.astro.build) or jump into our [Discor
 ## Credit
 
 This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+
+[1]: https://lit.dev/
+[2]: https://open-props.style/
+
+<!-- [1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle
+
+[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit lifestyles"
+
+[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle 'Hobbit lifestyles'
+[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle (Hobbit lifestyles)
+[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> "Hobbit lifestyles"
+[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> 'Hobbit lifestyles'
+[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> (Hobbit lifestyles) -->

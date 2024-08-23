@@ -1,20 +1,47 @@
 {
-  "name": "mc-astro-blog",
+  "name": "mc-astro-blog-template",
+  "author": "Mike Connor",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "imports": {
+    "#*": "./src/*"
+  },
+  "keywords": [
+    "astro",
+    "eslint",
+    "web-components",
+    "lit",
+    "template"
+  ],
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "check": "astro check",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint",
+    "fix": "eslint --fix",
+    "inspect": "eslint  --inspect-config",
+    "format": "prettier --write .",
+    "test": "vitest run"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.3",
     "@astrojs/mdx": "^3.1.4",
     "@astrojs/rss": "^4.0.7",
     "@astrojs/sitemap": "^3.1.6",
-    "astro": "^4.14.5",
-    "@astrojs/check": "^0.9.3",
+    "astro": "^4.14.5"
+  },
+  "engines": {
+    "node": ">= 20.11.0 <21 || >= 21.2.0",
+    "pnpm": ">=9.1.2"
+  },
+  "packageManager": "pnpm@9.8.0",
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
     "typescript": "^5.5.4"
   }
 }
